@@ -312,10 +312,12 @@ h3 {
 .gala-night-container,
 .preconf-container,
 .sponsors-container,
-.program-schedule-container {
+.program-schedule-container,
+.accommodation-container {
   padding-left: 0 !important;
   padding-right: 0 !important;
   max-width: none !important;
+  width: 100% !important;
   margin-left: 0 !important;
   margin-right: 0 !important;
 }
@@ -327,7 +329,8 @@ h3 {
 .info-bg .gala-night-container,
 .info-bg .preconf-container,
 .info-bg .sponsors-container,
-.info-bg .program-schedule-container {
+.info-bg .program-schedule-container,
+.info-bg .accommodation-container {
   padding: 0 !important;
   margin: 0 !important;
   width: 100% !important;
@@ -448,10 +451,12 @@ h3 {
   .gala-night-container,
   .preconf-container,
   .sponsors-container,
-  .program-schedule-container {
+  .program-schedule-container,
+  .accommodation-container {
     padding-left: 0 !important;
     padding-right: 0 !important;
     max-width: 100% !important;
+    width: 100% !important;
     margin-left: 0 !important;
     margin-right: 0 !important;
   }

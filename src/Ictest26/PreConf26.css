@@ -1,0 +1,139 @@
+.preconf26-layout {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    align-items: center;
+    width: 100%;
+    margin-top: 16px;
+}
+
+.preconf26-poster {
+    width: 100%;
+    max-width: 600px;
+    border-radius: 12px;
+    object-fit: cover;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+}
+
+.preconf26-details {
+    width: 100%;
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    color: white;
+}
+
+.preconf26-details h2 {
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: rgb(48, 123, 198);
+    margin: 0;
+    line-height: 1.4;
+}
+
+.preconf26-subtitle {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #e2e8f0;
+    margin: 0;
+}
+
+.preconf26-org {
+    font-size: 0.9rem;
+    color: #94a3b8;
+    margin: 0;
+    line-height: 1.6;
+}
+
+.preconf26-highlights h3 {
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: rgb(48, 123, 198);
+    margin: 0 0 8px 0;
+}
+
+.preconf26-highlights ul {
+    margin: 0;
+    padding-left: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.preconf26-highlights li {
+    font-size: 0.95rem;
+    color: #e2e8f0;
+    line-height: 1.5;
+}
+
+.preconf26-meta {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    background: rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    padding: 16px 20px;
+    border-left: 3px solid rgb(48, 123, 198);
+}
+
+.preconf26-meta-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 0.95rem;
+    color: #e2e8f0;
+}
+
+.preconf26-note {
+    font-size: 0.88rem;
+    color: #94a3b8;
+    font-style: italic;
+    margin: 0;
+}
+
+.preconf26-contact {
+    font-size: 0.95rem;
+    color: #e2e8f0;
+}
+
+.preconf26-register-btn {
+    display: inline-block;
+    background-color: rgb(48, 123, 198);
+    color: white;
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 12px 28px;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: background 0.3s ease, transform 0.2s ease;
+    text-align: center;
+}
+
+.preconf26-register-btn:hover {
+    background-color: rgb(30, 90, 160);
+    transform: scale(1.03);
+    color: white;
+}
+
+@media screen and (max-width: 768px) {
+    .preconf26-layout {
+        flex-direction: column;
+        gap: 24px;
+    }
+
+    .preconf26-poster {
+        width: 100%;
+        min-width: unset;
+    }
+
+    .preconf26-details h2 {
+        font-size: 1.1rem;
+    }
+
+    .preconf26-register-btn {
+        width: 100%;
+        text-align: center;
+    }
+}

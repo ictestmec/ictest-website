@@ -1,75 +1,57 @@
 import React from 'react';
-import '../Ictest25/PreConfTalk.css';
+import posterImage from '../assets/pre-conf-event-2026-1.jpeg';
+import './PreConf26.css';
 
 const PreConfTalk26 = () => {
     return (
         <div className="preconf-container">
             <h1>Pre-Conference Events</h1>
-            <div className="instruction-content" style={{marginBottom: "2rem", textAlign: "center"}}>
-                <p><strong>ICTEST 2026 Pre-Conference Events - Details Coming Soon!</strong></p>
-                <p>We are planning exciting pre-conference activities including workshops, tutorials, and networking sessions.</p>
-            </div>
+            <div className="preconf26-layout">
+                <img
+                    src={posterImage}
+                    alt="Workshop on Agentic AI and Workflow Automation"
+                    className="preconf26-poster"
+                />
+                <div className="preconf26-details">
+                    <h2>Don't Just Use AI — Build AI Agents That Automate Your Work!</h2>
+                    <p className="preconf26-subtitle">
+                        2-Day Hands-on Workshop on Agentic AI and Workflow Automation
+                    </p>
+                    <p className="preconf26-org">
+                        Organized by the Training Cell, Government Model Engineering College (MEC), as part of the IEEE Technically Sponsored 3rd International Conference on Trends in Engineering Systems and Technologies (ICTEST 2026).
+                    </p>
 
-            <div className="preconf-details">
-                <h3>Planned Pre-Conference Activities</h3>
-                
-                <div className="event-section">
-                    <h4>Technical Workshops</h4>
-                    <ul>
-                        <li><strong>Topic:</strong> TBD</li>
-                        <li><strong>Instructor:</strong> TBD</li>
-                        <li><strong>Date & Time:</strong> TBD</li>
-                        <li><strong>Duration:</strong> TBD</li>
-                        <li><strong>Registration:</strong> Details coming soon</li>
-                    </ul>
-                </div>
+                    <div className="preconf26-highlights">
+                        <h3>Why should you attend?</h3>
+                        <ul>
+                            <li><strong>Learn from an Expert:</strong> Led by Dr. Shailesh Sivan (Assistant Professor, DCS, CUSAT).</li>
+                            <li><strong>Purely Hands-on:</strong> Build and deploy actual workflows</li>
+                            <li><strong>Boost your Profile:</strong> Earn KTU Activity Points & get a certified credential.</li>
+                        </ul>
+                    </div>
 
-                <div className="event-section">
-                    <h4>Tutorial Sessions</h4>
-                    <ul>
-                        <li><strong>Topic:</strong> TBD</li>
-                        <li><strong>Presenter:</strong> TBD</li>
-                        <li><strong>Date & Time:</strong> TBD</li>
-                        <li><strong>Duration:</strong> TBD</li>
-                        <li><strong>Prerequisites:</strong> TBD</li>
-                    </ul>
-                </div>
+                    <div className="preconf26-meta">
+                        <div className="preconf26-meta-item">📅 <span><strong>Date:</strong> 8th &amp; 9th July 2026</span></div>
+                        <div className="preconf26-meta-item">⏰ <span><strong>Time:</strong> 9:30 AM – 4:30 PM</span></div>
+                        <div className="preconf26-meta-item">📍 <span><strong>Venue:</strong> SDPK Hall, MEC</span></div>
+                        <div className="preconf26-meta-item">💵 <span><strong>Fee:</strong> ₹300/-</span></div>
+                    </div>
 
-                <div className="event-section">
-                    <h4>Industry Panel Discussions</h4>
-                    <ul>
-                        <li><strong>Topic:</strong> TBD</li>
-                        <li><strong>Panelists:</strong> TBD</li>
-                        <li><strong>Moderator:</strong> TBD</li>
-                        <li><strong>Date & Time:</strong> TBD</li>
-                        <li><strong>Format:</strong> Interactive discussion with Q&A</li>
-                    </ul>
-                </div>
+                    <p className="preconf26-note">Note: Participants must bring their own laptops.</p>
+                    <p className="preconf26-note">Slots are limited! Secure your seat now.</p>
 
-                <div className="event-section">
-                    <h4>Networking Sessions</h4>
-                    <ul>
-                        <li><strong>Welcome Reception:</strong> TBD</li>
-                        <li><strong>Student-Industry Meetup:</strong> TBD</li>
-                        <li><strong>Research Collaboration Forum:</strong> TBD</li>
-                        <li><strong>Coffee Networking:</strong> TBD</li>
-                    </ul>
-                </div>
+                    <div className="preconf26-contact">
+                        <span>📞 +91 97467 31011</span>
+                    </div>
 
-                <h3>Registration Information</h3>
-                <p>Pre-conference event registration details will be available along with the main conference registration. Some events may have limited capacity and separate registration requirements.</p>
-
-                <h3>Benefits of Attending Pre-Conference Events</h3>
-                <ul>
-                    <li>Gain hands-on experience with cutting-edge technologies</li>
-                    <li>Learn from industry experts and renowned researchers</li>
-                    <li>Network with peers and potential collaborators</li>
-                    <li>Get insights into current trends and future directions</li>
-                    <li>Enhance your skills and knowledge before the main conference</li>
-                </ul>
-
-                <div className="update-notice">
-                    <p><strong>Stay tuned for detailed information about speakers, topics, and registration procedures for all pre-conference events.</strong></p>
+                    <a
+                        href="https://tinyurl.com/3bya98yy"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="preconf26-register-btn"
+                    >
+                        Secure Your Seat
+                    </a>
                 </div>
             </div>
         </div>

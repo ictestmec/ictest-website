@@ -110,9 +110,7 @@ export default function Accommodations26() {
     <div className="accommodation-container">
       <h2 className="accommodation-title">Accommodation</h2>
       <p>
-        ICTEST 2026 accommodation details will be provided once the venue is
-        confirmed. We will list recommended hotels and lodging options for your
-        convenience.
+        ICTEST does not provide any accommodation to participants. However, we have listed some hotels below for your convenience.
       </p>
       {/* <div
         className="instruction-content"
