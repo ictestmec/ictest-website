@@ -148,6 +148,53 @@ h1 {
     margin-top: 10px;
 }
 
+.day-section {
+    width: 100%;
+    max-width: 1300px;
+    margin-bottom: 40px;
+}
+
+.session-container .day-heading {
+    font-size: 32px;
+    color: #007bff;
+    text-align: center;
+    margin: 0 0 20px 0;
+    padding: 0;
+}
+
+.poster-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.poster-block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.3);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    flex: 1 1 420px;
+    max-width: 500px;
+}
+
+.poster-label {
+    font-size: 22px;
+    color: #ffffff;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.poster-image {
+    width: 100%;
+    height: auto;
+    border-radius: 6px;
+    object-fit: contain;
+}
+
 @media screen and (max-width: 900px) {
     .session-container {
         width: 100%;
@@ -223,6 +270,19 @@ h1 {
 
     .sessions-container h2, .sessions-container h1 {
         font-size: 24px;
+    }
+
+    .session-container .day-heading {
+        font-size: 20px;
+        margin-bottom: 15px;
+    }
+
+    .day-section {
+        margin-bottom: 25px;
+    }
+
+    .poster-label {
+        font-size: 18px;
     }
 
     .session-card h3 {

@@ -8,7 +8,6 @@ import Notifications26 from "./Notifications26";
 import Venue26 from "./Venue26";
 import Accommodations26 from "./Accommodations26";
 import Sessions26 from "./Sessions26";
-import ProgramSchedule26 from "./ProgramSchedule26";
 import Sponsors26 from "./Sponsors26";
 import PreConfTalk26 from "./PreConfTalk26";
 
@@ -58,6 +57,11 @@ export default function ICtest26Info() {
       isActive: true,
     },
     {
+      name: "Program Schedule",
+      url: "/docs/Program Schedule.pdf",
+      isActive: true,
+    },
+    {
       name: "Venue",
       content: <Venue26 />,
       isActive: true,
@@ -73,16 +77,14 @@ export default function ICtest26Info() {
       isActive: true,
     },
     {
-      name: "Program Schedule",
-      content: <ProgramSchedule26 />,
-    },
-    {
-      name: "Plenary sessions and speakers",
+      name: "Plenary Sessions and Speakers",
       content: <Sessions26 />,
+      isActive: true,
     },
     {
       name: "Our Sponsors",
       content: <Sponsors26 />,
+      isActive: true,
     },
   ];
 
