@@ -1,129 +1,56 @@
 import "../Ictest25/Sessions.css";
 
-// Import placeholder images - these will be updated for ICTEST26
-import PlaceholderImage from "../assets/ieeeLogo.png";
+import Day1Keynote from "../assets/Day-1-Keynote.jpeg";
+import Day1Plenary from "../assets/Day-1-Plenary.jpeg";
+import Day2Plenary1 from "../assets/Day-2-Plenary-1.jpeg";
+import Day2Plenary2 from "../assets/Day-2-Plenary-2.jpeg";
+import Day2Plenary3 from "../assets/Day-2-Plenary-3.jpeg";
+import Day3Plenary1 from "../assets/Day-3-Plenary-1.jpeg";
+import Day3Plenary2 from "../assets/Day-3-Plenary-2.jpeg";
 
 export default function Sessions26() {
-  const sessions = [
+  const days = [
     {
-      date: "TBD",
-      time: "TBD",
-      topic: "TBD",
-      speaker: "TBD",
-      designation: [
-        "Details to be announced"
+      day: "Day 1",
+      posters: [
+        { label: "Keynote", image: Day1Keynote },
+        { label: "Plenary", image: Day1Plenary },
       ],
-      speaker_desc:
-        "Speaker details will be updated soon.",
-      image: PlaceholderImage,
     },
     {
-      date: "TBD",
-      time: "TBD",
-      topic: "TBD",
-      speaker: "TBD",
-      designation: ["Details to be announced"],
-      speaker_desc:
-        "Speaker details will be updated soon.",
-      image: PlaceholderImage,
-    },
-    {
-      date: "TBD",
-      time: "TBD",
-      topic: "TBD",
-      speaker: "TBD",
-      designation: [
-        "Details to be announced"
+      day: "Day 2",
+      posters: [
+        { label: "Plenary 1", image: Day2Plenary1 },
+        { label: "Plenary 2", image: Day2Plenary2 },
+        { label: "Plenary 3", image: Day2Plenary3 },
       ],
-      speaker_desc: "Speaker details will be updated soon.",
-      image: PlaceholderImage
     },
     {
-      date: "TBD",
-      time: "TBD",
-      topic: "TBD",
-      speaker: "TBD",
-      designation: ["Details to be announced"],
-      speaker_desc:
-        "Speaker details will be updated soon.",
-      image: PlaceholderImage,
-    },
-    {
-      date: "TBD",
-      time: "TBD",
-      topic: "TBD",
-      speaker: "TBD",
-      designation: ["Details to be announced"],
-      speaker_desc: "Speaker details will be updated soon.",
-      image: PlaceholderImage,
-    },
-    {
-      date: "TBD",
-      time: "TBD",
-      topic: "TBD",
-      speaker: "TBD",
-      designation: ["Details to be announced"],
-      speaker_desc: "Speaker details will be updated soon.",
-      image: PlaceholderImage,
-    },
-    {
-      date: "TBD",
-      time: "TBD",
-      topic: "TBD",
-      speaker: "TBD",
-      designation: [
-        "Details to be announced"
+      day: "Day 3",
+      posters: [
+        { label: "Plenary 1", image: Day3Plenary1 },
+        { label: "Plenary 2", image: Day3Plenary2 },
       ],
-      speaker_desc:
-        "Speaker details will be updated soon.",
-      image: PlaceholderImage,
-    },
-    {
-      date: "TBD",
-      time: "TBD",
-      topic: "TBD",
-      speaker: "TBD",
-      designation: [
-        "Details to be announced"
-      ],
-      speaker_desc: "Speaker details will be updated soon.",
-      image: PlaceholderImage,
     },
   ];
 
   return (
     <div className="sessions-container">
       <h1 className="session-title">Plenary Sessions and Speakers</h1>
-      <div className="instruction-content" style={{marginBottom: "2rem", textAlign: "center"}}>
-        <p>Details for ICTEST 2026 speakers and sessions will be updated soon. Stay tuned for announcements!</p>
-      </div>
       <div className="session-container">
-        {sessions.map((session, index) => (
-          <div className="session-card" key={index}>
-            <div className="session-pic-container">
-              <img src={session.image} alt={session.speaker} />
-            </div>
-            <div className="session-details">
-              <h3>Topic: <span>{session.topic}</span></h3>
-              <h4>Speaker: {session.speaker}</h4>
-              {session.designation.map((each, index) => (
-                <p key={index}>{each}</p>
+        {days.map((day) => (
+          <div className="day-section" key={day.day}>
+            <h2 className="day-heading">{day.day}</h2>
+            <div className="poster-grid">
+              {day.posters.map((poster) => (
+                <div className="poster-block" key={poster.label}>
+                  <h3 className="poster-label">{poster.label}</h3>
+                  <img className="poster-image" src={poster.image} alt={`${day.day} ${poster.label}`} />
+                </div>
               ))}
-              <p className="session-time"><strong>{session.date} | {session.time}</strong></p>
             </div>
           </div>
         ))}
-        <div className="session-card">
-          <div className="session-pic-container">
-            <img src={PlaceholderImage} alt="Panel Discussion" />
-          </div>
-          <div className="session-details">
-            <h3>Panel Discussion: <span>TBD</span></h3>
-            <h4>Moderator: TBD</h4>
-            <p>Details to be announced</p>
-            <p className="session-time"><strong>TBD | TBD</strong></p>
-          </div>
-        </div>
       </div>
     </div>
   );
